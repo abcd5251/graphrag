@@ -5,6 +5,7 @@ Convert pdf to txt file, also count tokens
 import pypdfium2 as pdfium
 import tiktoken
 
+# your pdf file
 pdf = pdfium.PdfDocument("./ragtest/input/data.pdf")
 version = pdf.get_version()  # get the PDF standard version
 n_pages = len(pdf)  # get the number of pages in the document
@@ -22,7 +23,7 @@ with open('output.txt', 'w') as file:
     file.write(information)
 print("Data has been written to output.txt")
 
-COMPLETIONS_MODEL = "gpt-3.5-turbo"
+COMPLETIONS_MODEL = "gpt-4o"
 
 def num_tokens_from_string(string: str, encoding_name = COMPLETIONS_MODEL) -> int:
     """Returns the number of tokens in a text string."""

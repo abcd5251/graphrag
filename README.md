@@ -4,6 +4,11 @@
 - File type: `.txt` only
 
 ## Execution Steps
+### 1. Install Dependency
+```bash
+
+```
+
 ### 1. Initial Structure
 No API key required for this step.
 ```bash
